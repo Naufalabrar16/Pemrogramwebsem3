@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Mahasiswa - Naufal Abrar Ramadhani</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <header id="header">
+        <h1>Profil Mahasiswa</h1>
+        <nav>
+            <a href="#profil">Profil</a> |
+            <a href="#jadwal">Jadwal Kuliah</a> |
+            <a href="#form">Form Data</a>
+        </nav>
+    </header>
+
+    <main id="content">
+
+        <section id="profil" class="kolom">
+            <h2>Profil</h2>
+            <p><strong>Nama:</strong> Naufal Abrar Ramadhani</p>
+            <p><strong>NIM:</strong> 607022500024</p>
+            <p><strong>Kelas:</strong> D3TK-49-01</p>
+            <p><strong>Program Studi:</strong> D3 Teknologi Komputer</p>
+        </section>
+
+        <section id="jadwal" class="kolom">
+            <h2>Jadwal Kuliah</h2>
+            <table border="1">
+                <tr>
+                    <th>No</th>
+                    <th>Mata Kuliah</th>
+                    <th>Hari</th>
+                    <th>Jam</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Pemrograman Web</td>
+                    <td>Senin</td>
+                    <td>08.00 - 10.30</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Basis Data</td>
+                    <td>Selasa</td>
+                    <td>10.30 - 13.00</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Jaringan Komputer</td>
+                    <td>Rabu</td>
+                    <td>08.00 - 10.30</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="form" class="kolom">
+            <h2>Form Data Mahasiswa</h2>
+
+            <form id="formMahasiswa" novalidate>
+
+                <div class="field">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap">
+                    <div class="error" id="namaError"></div>
+                </div>
+
+                <div class="field">
+                    <label for="nim">NIM</label>
+                    <input type="text" id="nim" name="nim" placeholder="Masukkan NIM">
+                    <div class="error" id="nimError"></div>
+                </div>
+
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="contoh@email.com">
+                    <div class="error" id="emailError"></div>
+                </div>
+
+                <div class="field">
+                    <label for="jurusan">Jurusan</label>
+                    <select id="jurusan" name="jurusan">
+                        <option value="">-- Pilih jurusan --</option>
+                        <option value="TI">Teknik Informatika</option>
+                        <option value="SI">Sistem Informasi</option>
+                        <option value="TK">Teknik Komputer</option>
+                    </select>
+                    <div class="error" id="jurusanError"></div>
+                </div>
+
+                <div class="field">
+                    <span class="label-group">Jenis Kelamin</span>
+                    <label class="inline"><input type="radio" name="gender" value="L"> Laki-laki</label>
+                    <label class="inline"><input type="radio" name="gender" value="P"> Perempuan</label>
+                    <div class="error" id="genderError"></div>
+                </div>
+
+                <div class="field">
+                    <span class="label-group">Hobi (pilih minimal satu)</span>
+                    <label class="inline"><input type="checkbox" name="hobi" value="Membaca"> Membaca</label>
+                    <label class="inline"><input type="checkbox" name="hobi" value="Olahraga"> Olahraga</label>
+                    <label class="inline"><input type="checkbox" name="hobi" value="Bersepeda"> Bersepeda</label>
+                    <div class="error" id="hobiError"></div>
+                </div>
+
+                <div class="field">
+                    <label for="alamat">Alamat</label>
+                    <textarea id="alamat" name="alamat" rows="3" placeholder="Masukkan alamat"></textarea>
+                    <div class="error" id="alamatError"></div>
+                </div>
+
+                <button type="submit">Kirim</button>
+                <div id="pesanSukses" class="sukses" role="status"></div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        &copy; 2026 Naufal Abrar Ramadhani - 607022500024 - D3TK-49-01
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

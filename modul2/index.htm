@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Web Profil Saya</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div id="header">
+        <h1>Profil Naufal Abrar Ramadhani</h1>
+        <a href="#section1">Profil</a> |
+        <a href="#section2">Jadwal Kuliah</a> |
+        <a href="#section3">Form Data</a>
+    </div>
+
+    <div id="content">
+
+        <div class="kolom">
+            <h2 id="section1">Profil</h2>
+            <p>Nama: Naufal Abrar Ramadhani</p>
+            <p>NIM: 607022500024</p>
+            <p>Kelas: D3TK-49-01</p>
+
+            <h2 id="section2">Jadwal Kuliah</h2>
+            <table border="1">
+                <tr>
+                    <th>No</th>
+                    <th>Hari</th>
+                    <th>Mata Kuliah</th>
+                    <th>Jam</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Senin</td>
+                    <td>Pemrograman Web</td>
+                    <td>07.30 - 10.00</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Selasa</td>
+                    <td>Basis Data</td>
+                    <td>10.00 - 12.30</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Rabu</td>
+                    <td>Jaringan Komputer</td>
+                    <td>13.00 - 15.30</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Kamis</td>
+                    <td>Algoritma dan Pemrograman</td>
+                    <td>07.30 - 10.00</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Jumat</td>
+                    <td>Sistem Digital</td>
+                    <td>08.00 - 10.30</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="kolom">
+            <h2 id="section3">Form Data Mahasiswa</h2>
+            <form action="#">
+                Nama: <input type="text" name="nama"><br>
+                NIM: <input type="text" name="nim"><br>
+                Jurusan:
+                <select name="jurusan">
+                    <option value="TI">Teknik Informatika</option>
+                    <option value="SI">Sistem Informasi</option>
+                    <option value="TK">Teknik Komputer</option>
+                </select><br>
+                Hobi:<br>
+                <input type="checkbox" name="hobi" value="Membaca"> Membaca<br>
+                <input type="checkbox" name="hobi" value="Olahraga"> Olahraga<br>
+                <input type="checkbox" name="hobi" value="Bersepeda"> Bersepeda<br>
+                <input type="submit" value="Kirim">
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        Naufal Abrar Ramadhani - 607022500024 - D3TK-49-01
+    </div>
+
+</body>
+</html>
