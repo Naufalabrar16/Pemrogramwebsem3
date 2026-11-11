@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan Praktikum Validasi Form</title>
+</head>
+<body>
+    <h2>Formulir Data Pengguna</h2>
+    <!-- Tambahkan onsubmit di sini -->
+    <form id="latihanForm" onsubmit="return validasiSemua()">
+        <label for="nama">Nama (Wajib diisi):</label><br>
+        <input type="text" id="nama" onblur="validasiNama()"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" onblur="validasiEmail()"><br><br>
+
+        <label for="umur">Umur (1 - 100):</label><br>
+        <input type="number" id="umur" onblur="validasiUmur()"><br><br>
+
+        <input type="submit" value="Kirim">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
